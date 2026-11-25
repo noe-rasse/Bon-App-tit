@@ -1,0 +1,42 @@
+/*les variables pour les couleurs*/
+:root{
+    --color-bg:rgb(44, 38, 23);
+    --color-txt:white;
+}
+/*retirre les trucs non voulus*/
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+footer {
+    color:var(--color-txt);
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 2vh 5vw;
+}
+
+footer div:not(:last-child){
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+footer p{
+    margin: 0 0 2vh 0;
+    font-weight: bold;
+}
+
+footer div:last-child{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh  0;
+}
