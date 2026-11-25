@@ -5,19 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="header-top">
-            <img id="img-bon-appetit" src="./images-site/Logo élégant Bon Appétit restaurant.png" alt="">
-            <div class="header-ref">
-                <a class="nav-text" href="#accueil">Accueil</a>
-                <a class="nav-text" href="#cartes">Cartes</a>
-                <a class="nav-text" href="#avis">Avis</a>
-                <a class="reservation nav-text" href="#reservation">Réservation</a>
-            </div>
+    <header class="hero">
+        <img class="img-fond" src="./images-site/Noir gourmand, table élégante et lumière dorée 1.png" alt="">
+        <nav class="navbar container">
+            <a href="#accueil" class="logo">
+                <img src="./images-site/Logo élégant Bon Appétit restaurant.png" alt="Logo Bon Appétit">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#carte">Notre carte</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#avis">Avis</a></li>
+            </ul>
         </nav>
+        <div class="hero-content container" id="accueil">
+            <p class="subtitle gold">---- RESTAURANT GASTRONOMIQUE ----</p>
+            <h1>Bon <span class="accent">Appétit</span></h1>
+            <p class="hero-description">Une expérience culinaire unique,<br>au cœur de la gastronomie française.</p>
+            <a href="#reservation" class="btn-primary">
+                <img src="./images-site/calendar_month.svg" alt="" class="icon">
+                <span>Réserver une table</span>
+            </a>
+        </div>
     </header>
     <main>
         <form action="" method="post">
