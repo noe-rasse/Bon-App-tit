@@ -34,11 +34,13 @@
     </header>
     <main>
         <form action="" method="post">
-            <label for="text">Entrer votre nom</label>
-            <input type="text" name="name" id="name" placeholder="Bouillon" pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]">
-            <label for="choix">Choisissez l'heure de reservation</label>
-            <select name="reservation" id="reservation">
-                <option value="">-- Selectionner--</option>
+            <label for="text"><img src="/images-site/person.svg" alt="homme"></label>
+            <input type="text" name="name" id="name" placeholder="Bouillon" pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]" required>
+            <label for=""><img src="/images-site/calendar_month.svg" alt="Calendrier"></label>
+            <input type="date" name="date" id="date" value="2026-12-2" min="2026-12-2" max="2027-03-2" required>
+            <label for="choix"><img src="images-site/schedule.svg" alt="Horloge"></label>
+            <select name="reservation" id="reservation" required>
+                <option value="">-- Selectionner --</option>
                 <option value="Option1">12H00</option>
                 <option value="Option2">12H30</option>
                 <option value="Option3">13h00</option>
@@ -52,9 +54,9 @@
                 <option value="Option11">21H00</option>
                 <option value="Option12">21H30</option>
             </select>
-            <label for="choix">Choisissez le nombre de personne à votre table</label>
-            <select name="personne" id="perso">
-                <option value="Option1">-- selectionner --</option>
+            <label for="choix"><img src="images-site/group.svg" alt="groupe d'homme"></label>
+            <select name="personne" id="perso" required>
+                <option value="Option1">-- Selectionner --</option>
                 <option value="Option2">1</option>
                 <option value="Option3">2</option>
                 <option value="Option4">3</option>
@@ -66,4 +68,5 @@
         </form>
     </main>
 </body>
+
 </html>
