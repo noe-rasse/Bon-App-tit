@@ -9,39 +9,54 @@
 
 <body>
     <main>
-        <form action="" method="post">
-            <label for="text"><img src="images-site/person.svg" alt="Homme"></label>
-            <input type="text" name="name" id="name" placeholder="Bouillon" pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]">
-            <label for="date"><img src="images-site/calendar_month.svg" alt="Calendrier"></label>
-            <input type="date" name="date" id="date" placeholder="date">
-            <label for="choix"><img src="images-site/schedule.svg" alt="Horloge"></label>
-            <select name="reservation" id="reservation">
-                <option value="">-- Selectionner--</option>
-                <option value="Option1">12H00</option>
-                <option value="Option2">12H30</option>
-                <option value="Option3">13h00</option>
-                <option value="Option4">13h00</option>
-                <option value="Option5">13h30</option>
-                <option value="Option6">14H00</option>
-                <option value="Option7">19H00</option>
-                <option value="Option8">19H30</option>
-                <option value="Option9">20H00</option>
-                <option value="Option10">20H30</option>
-                <option value="Option11">21H00</option>
-                <option value="Option12">21H30</option>
-            </select>
-            <label for="choix"><img src="images-site/group.svg" alt="Groupe d'homme"></label>
-            <select name="personne" id="perso">
-                <option value="Option1">-- selectionner --</option>
-                <option value="Option2">1</option>
-                <option value="Option3">2</option>
-                <option value="Option4">3</option>
-                <option value="Option5">4</option>
-                <option value="Option6">5</option>
-                <option value="otpion7">6</option>
-            </select>
-            <button type="submit">Réserver</button>
-        </form>
+        <section class="form">
+            <form action="" method="post">
+                <label for="text"><img src="images-site/person.svg" alt="Homme"></label>
+                <input type="text" name="name" id="name" placeholder="Bouillon" pattern="[A-Za-zÀ-ÖØ-öø-ÿ' -]">
+                <div class="date-hour">
+                    <label for="date"><img src="images-site/calendar_month.svg" alt="Calendrier"></label>
+                    <input type="date" name="date" id="date" placeholder="date">
+                    <label for="choix"><img src="images-site/schedule.svg" alt="Horloge"></label>
+                    <select name="reservation" id="reservation">
+                        <option value="">-- Selectionner--</option>
+                        <option value="Option1">12H00</option>
+                        <option value="Option2">12H30</option>
+                        <option value="Option3">13h00</option>
+                        <option value="Option4">13h00</option>
+                        <option value="Option5">13h30</option>
+                        <option value="Option6">14H00</option>
+                        <option value="Option7">19H00</option>
+                        <option value="Option8">19H30</option>
+                        <option value="Option9">20H00</option>
+                        <option value="Option10">20H30</option>
+                        <option value="Option11">21H00</option>
+                        <option value="Option12">21H30</option>
+                    </select>
+                </div>
+                <label for="choix"><img src="images-site/group.svg" alt="Groupe d'homme"></label>
+                <select name="personne" id="perso">
+                    <option value="Option1">-- selectionner --</option>
+                    <option value="Option2">1</option>
+                    <option value="Option3">2</option>
+                    <option value="Option4">3</option>
+                    <option value="Option5">4</option>
+                    <option value="Option6">5</option>
+                    <option value="otpion7">6</option>
+                </select>
+                <button type="submit">Confirmez ma réservation -></button>
+            </form>
+            <div class="right-form">
+                <img src="" alt="">
+                <div class="reservation">
+                    <p>--RESERVATION--</p>
+                    <h2>Réserver votre table</h2>
+                    <p>
+                        En quelques cliques, réservez votre table et profitez
+                        d’un moment inoubliable chez Michel Bouillon.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
